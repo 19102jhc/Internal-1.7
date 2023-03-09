@@ -7,5 +7,7 @@
   TIP: Use assessment guide to help guide you through this Internal
 '''
 import time
-import random.randit
 print("Welcome to the Music Quiz!")
+print("By Oliver!")
+time.sleep(1)
+
