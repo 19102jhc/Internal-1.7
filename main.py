@@ -10,4 +10,5 @@ import time
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
 time.sleep(1)
+print("Loading...")
 
