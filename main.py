@@ -13,10 +13,12 @@ time.sleep(1)
 print("Loading...")
 time.sleep(3)
 
-Music_list = ["to be done"]
-Enter_to_play = input("Press ENTER to start the quiz")
+Music_list_dict = ["to be done"]
+Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
 if Enter_to_play == 'ENTER':
   print("All right!")
+else:
+  print("I don't understand.")
 
 
 
