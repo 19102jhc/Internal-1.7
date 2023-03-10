@@ -7,7 +7,9 @@
   TIP: Use assessment guide to help guide you through this Internal
 '''
 import time
-print("Welcome to the Music Quiz!")
+while True:
+  
+  print("Welcome to the Music Quiz!")
 print("By Oliver!")
 time.sleep(1)
 print("Loading...")
@@ -18,7 +20,9 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
 if Enter_to_play == 'ENTER':
   print("All right!")
 else:
-  print("I don't understand.")
+  print("Invalid input, please try again.")
+  break
+  
 
 
 
