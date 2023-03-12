@@ -7,6 +7,7 @@
   TIP: Use assessment guide to help guide you through this Internal
 '''
 import time
+import randit
   
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
@@ -15,7 +16,12 @@ time.sleep(1)
 print("Loading...")
 time.sleep(3)
 
-Music_list_dict = {}
+Music_list_dict = {
+'Questions' : randit['Who made the album The Dark Side of The Moon?']
+}
+Music_list_dict = {
+  'Answers' : ['Pink Floyd']
+}
 
 
 Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
