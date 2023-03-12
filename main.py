@@ -22,8 +22,14 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
+  print("Lets start the quiz!")
 else:
   print("Invalid input, please try again.")
+  
+  
+
+  
+  
   
 
 
