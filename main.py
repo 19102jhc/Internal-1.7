@@ -14,6 +14,8 @@ print("🎵🎶🎹🎸")
 time.sleep(1)
 print("Loading...")
 time.sleep(3)
+print("Score is at 0")
+score = 0
 
 Music_list_dict1 = {
 'Question' : ['Who made the album The Dark Side of The Moon?']
@@ -27,11 +29,21 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
-  print("Lets start the quiz!")
-  print (Music_list_dict1)
-
 else:
   print("Invalid input, please try again.")
+
+  
+  print (Music_list_dict1)
+  answer = input(">>")
+  if answer == (Music_list_dict2):
+    print ("Well done!")
+    score = +1
+
+
+
+  
+  
+
   
   
 
