@@ -18,10 +18,10 @@ print("Score is at 0")
 score = 0
 
 Music_list_dict1 = {
-'Question' : ['Who made the album The Dark Side of The Moon?']
+'Question' : 'Who made the album The Dark Side of The Moon?'
 }
 Music_list_dict2 = {
-  'Answer' : ['Pink Floyd']
+  'Answer' : 'Pink Floyd'
 }
 
 
@@ -29,15 +29,20 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
-else:
-  print("Invalid input, please try again.")
-
-  
   print (Music_list_dict1)
   answer = input(">>")
   if answer == (Music_list_dict2):
     print ("Well done!")
-    score = +1
+    score = +10
+    print("You now have 10 points!")
+    
+else:
+  print("Invalid input, please try again.")
+  score = 0
+  print("You are wrong! You have got no points from this!")
+
+  
+  
 
 
 
