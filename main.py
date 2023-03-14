@@ -21,7 +21,7 @@ Music_list_dict1 = {
 'Question' : 'Who made the album The Dark Side of The Moon?'
 }
 Music_list_dict2 = {
-  'Answer' : 'Pink Floyd'
+  'Answer' : 'Pink Floyd', 
 }
 
 
@@ -29,14 +29,13 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
-
   
   print (Music_list_dict1)
   answer = input(">>")
   if answer == (Music_list_dict2):
     print ("Well done!")
-    score = +10
-    print("You now have 10 points!")
+    score = +5
+    print("You now have 5 points!")
     
 else:
   print("Invalid input, please try again.")
@@ -47,8 +46,8 @@ print(Music_list_dict1)
 answer = input(">>")
 if answer == (Music_list_dict2):
   print("Well done!")
-  score = +20
-  print("You now have 20 points!")
+  score = +10
+  print("You now have 10 points!")
 else:
   score = 0
 print("You are wrong! You got no points from this!")
