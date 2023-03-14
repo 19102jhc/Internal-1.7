@@ -29,6 +29,8 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
+
+  
   print (Music_list_dict1)
   answer = input(">>")
   if answer == (Music_list_dict2):
@@ -38,8 +40,19 @@ if Enter_to_play == 'ENTER':
     
 else:
   print("Invalid input, please try again.")
+score = 0
+print("You are wrong! You got no points from this!")
+
+print(Music_list_dict1)
+answer = input(">>")
+if answer == (Music_list_dict2):
+  print("Well done!")
+  score = +20
+  print("You now have 20 points!")
+else:
   score = 0
-  print("You are wrong! You have got no points from this!")
+print("You are wrong! You got no points from this!")
+  
 
   
   
