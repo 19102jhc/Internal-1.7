@@ -51,6 +51,15 @@ if answer == (Music_list_dict2):
 else:
   score = 0
 print("You are wrong! You got no points from this!")
+
+while True:
+  again = input("Do you want to repeat the quiz?")
+  if again == 'yes':
+    print("Welcome back!")
+  else:
+    break
+    
+
   
 
   
