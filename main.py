@@ -58,13 +58,16 @@ else:
 print("You are wrong! You got no points from this!")
 #end of game
 while True:
+  if score <30:
+    print("You have passed the quiz! Well done!")
+  
   again = input("Do you want to repeat the quiz?")
   if again == 'yes':
     print("Welcome back!")
     if again == 'no':
       print("Goodbye!")
-      break
-  else:
+  break
+else:
       print("I don't understand!")
    
     
