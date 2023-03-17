@@ -55,11 +55,12 @@ while True:
   again = input("Do you want to repeat the quiz?")
   if again == 'yes':
     print("Welcome back!")
-    if again =='no':
+    if again == 'no':
       print("Goodbye!")
+      break
   else:
       print("I don't understand!")
-      break #exit
+   
     
 
   
