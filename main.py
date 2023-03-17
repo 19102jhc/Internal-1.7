@@ -20,7 +20,7 @@ for delay in range(5, 0, -1):
   print(delay)
   
 time.sleep(3)
-print("Score is at 0")
+print("Score is currently at 0")
 score = 0
 
 Music_list_dict1 = {
@@ -56,7 +56,7 @@ if answer == (Music_list_dict2):
 else:
   score = 0
 print("You are wrong! You got no points from this!")
-
+#end of game
 while True:
   again = input("Do you want to repeat the quiz?")
   if again == 'yes':
