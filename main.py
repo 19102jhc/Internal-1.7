@@ -13,6 +13,12 @@ print("By Oliver!")
 print("🎵🎶🎹🎸")
 time.sleep(1)
 print("Loading...")
+print('Starting in: ')
+
+for delay in range(5, 0, -1):
+  time.sleep(1)
+  print(delay)
+  
 time.sleep(3)
 print("Score is at 0")
 score = 0
