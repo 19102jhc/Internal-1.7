@@ -25,10 +25,7 @@ print("Score is currently at 0")
 score = 0
 
 Music_list_dict1 = {
-'Question' : 'Who made the album The Dark Side of The Moon?'
-}
-Music_list_dict2 = {
-  'Answer' : 'Pink Floyd', 
+'Question' : 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'
 }
 
 
@@ -40,7 +37,7 @@ if Enter_to_play == 'ENTER':
   while True:
     print(Music_list_dict1)
   answer = input(">>")
-  if answer == (Music_list_dict2):
+  if answer == (Music_list_dict1):
     print ("Well done!")
     score = +5
     print("You now have 5 more points!")
