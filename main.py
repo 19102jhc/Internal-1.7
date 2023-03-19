@@ -46,6 +46,7 @@ if Enter_to_play == 'ENTER':
     print ("Well done! You got this right!")
     score = +5
     print("You now have 5 more points!")
+    print("Your score is now at", score)
     #end of game
 while True:
   if score == 30:
