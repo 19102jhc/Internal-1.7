@@ -38,8 +38,9 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
 if Enter_to_play == 'ENTER':
   print("All right!")
 
-  while True:
-    print(Music_list_dict1)
+  while score <30:
+    random_music_questions = random.choice(Music_list_dict1)
+    print (random_music_questions(Music_list_dict1))
   answer = input(">>")
   if answer == (Music_list_dict1):
     print ("Well done!")
