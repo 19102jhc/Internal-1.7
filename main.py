@@ -46,17 +46,18 @@ if Enter_to_play == 'ENTER':
     print("You now have 5 more points!")
     #end of game
 while True:
-  if score <30:
+  if score == 30:
     print("You have passed the quiz! Well done!")
     again = input("Do you want to repeat the quiz?")
   if again == 'yes':
     print("Welcome back!")
     #repeat the quiz
     if again == 'no':
-      print("Goodbye!")
+      print("Goodbye! Thanks for playing!")
   break
 else:
     #new question added
+  #currently fixing 
   print("Invalid input, please try again.")
 score = 0
 print("You are wrong! You got no points from this!")
