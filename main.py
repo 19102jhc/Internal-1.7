@@ -35,41 +35,37 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
-  print (Music_list_dict1)
+
+  while True:
+    print (Music_list_dict1)
   answer = input(">>")
   if answer == (Music_list_dict2):
     print ("Well done!")
     score = +5
     print("You now have 5 more points!")
-    
-else:
-  print("Invalid input, please try again.")
-score = 0
-print("You are wrong! You got no points from this!")
-
-print(Music_list_dict1)
-answer = input(">>")
-if answer == (Music_list_dict2):
-  print("Well done!")
-  score = +10
-  print("You now have 10 points!")
-else:
-  score = 0
-print("You are wrong! You got no points from this!")
-#end of game
+    #end of game
 while True:
   if score <30:
     print("You have passed the quiz! Well done!")
-  
-  again = input("Do you want to repeat the quiz?")
+    again = input("Do you want to repeat the quiz?")
   if again == 'yes':
     print("Welcome back!")
     if again == 'no':
       print("Goodbye!")
   break
 else:
-      print("I don't understand!")
-   
+    #new question
+else:
+  print("I don't understand!")
+  
+
+else:
+  print("Invalid input, please try again.")
+score = 0
+print("You are wrong! You got no points from this!")
+
+
+
     
 
   
