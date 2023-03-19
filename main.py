@@ -8,6 +8,7 @@
 '''
 #imports
 import time
+import random
 
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
@@ -25,8 +26,11 @@ print("Score is currently at 0")
 score = 0
 
 Music_list_dict1 = {
-'Question' : 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'
-}
+'Question' : 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'}
+{
+'Question' : 'Who is the lead singer of Led Zepplin?', 'Answer': 'Robert Plant'}
+
+
 
 
 Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
