@@ -6,6 +6,7 @@
   
   TIP: Use assessment guide to help guide you through this Internal
 '''
+#imports
 import time
 
 print("Welcome to the Music Quiz!")
@@ -50,11 +51,12 @@ while True:
     again = input("Do you want to repeat the quiz?")
   if again == 'yes':
     print("Welcome back!")
+    #repeat the quiz
     if again == 'no':
       print("Goodbye!")
   break
 else:
-    #new question
+    #new question added
   print("Invalid input, please try again.")
 score = 0
 print("You are wrong! You got no points from this!")
