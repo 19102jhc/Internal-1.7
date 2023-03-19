@@ -37,7 +37,7 @@ if Enter_to_play == 'ENTER':
   print("All right!")
 
   while True:
-    print (Music_list_dict1)
+    print(Music_list_dict1)
   answer = input(">>")
   if answer == (Music_list_dict2):
     print ("Well done!")
@@ -55,11 +55,6 @@ while True:
   break
 else:
     #new question
-else:
-  print("I don't understand!")
-  
-
-else:
   print("Invalid input, please try again.")
 score = 0
 print("You are wrong! You got no points from this!")
