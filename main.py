@@ -30,14 +30,11 @@ Music_list_dict1 = {
 {
 'Question' : 'Who is the lead singer of Led Zepplin?', 'Answer': 'Robert Plant'}
 
-
-
-
 Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
-
+#randomly generated questions
   while score <30:
     random_music_questions = random.choice(Music_list_dict1)
     print (random_music_questions(Music_list_dict1))
