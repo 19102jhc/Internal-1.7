@@ -42,8 +42,8 @@ if Enter_to_play == 'ENTER':
     random_music_questions = random.choice(Music_list_dict1)
     print (random_music_questions(Music_list_dict1))
   answer = input(">>")
-  if answer == (Music_list_dict1):
-    print ("Well done!")
+  if answer.lower() == random_music_questions['Answer'].lower():
+    print ("Well done! You got this right!")
     score = +5
     print("You now have 5 more points!")
     #end of game
