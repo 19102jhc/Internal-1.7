@@ -40,9 +40,8 @@ if Enter_to_play == 'ENTER':
   print("All right!")
 #randomly generated questions
   while score <30:
-    random_music_questions = random.choice(Music_list_dict1)
-    print (random_music_questions(Music_list_dict1))
-    time.sleep(1)
+    random_music_questions = random.choice(list(Music_list_dict1.values()))
+    print (random_music_questions["Question"])
   answer = input(">>")
   if answer.lower() == random_music_questions['Answer'].lower():
     print ("Well done! You got this right!")
