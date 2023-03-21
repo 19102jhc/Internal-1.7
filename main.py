@@ -40,7 +40,7 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
 if Enter_to_play == 'ENTER':
   print("All right!")
 #randomly generated questions
- while score < 30:
+while score <30:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
     print(random_music_questions["Question"])
     answer = input(">>")
@@ -50,7 +50,7 @@ if Enter_to_play == 'ENTER':
         print("You now have 5 more points!")
         print("Your score is now at", score)
     else:
-        print("Incorrect!")
+        print("That is incorrect!")
     #end of game
 while True:
   if score == 30:
