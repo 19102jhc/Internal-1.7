@@ -41,6 +41,8 @@ Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
 if Enter_to_play == 'ENTER':
   print("All right!")
+  name = input("What is your name?")
+  print("Welcome", name )
 #randomly generated questions
 while score <30:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
