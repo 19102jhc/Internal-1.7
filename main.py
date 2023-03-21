@@ -32,7 +32,9 @@ Music_list_dict1 = {
 
 'Question 3 ' : {'Question' : 'What band has been going for the longest time live?', 'Answer': 'The Rolling Stones'},
 
-'Question 4 ' : {'Question' :'What is the most hated music genre?', 'Answer': 'Jazz'}
+'Question 4 ' : {'Question' :'What is the most hated music genre?', 'Answer': 'Jazz'},
+  
+'Question 5 ' : {'Question' :'What is the best selling album of all time?', 'Answer': 'Thriller'}
 }
 
 Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
