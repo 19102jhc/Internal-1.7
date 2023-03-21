@@ -24,11 +24,15 @@ for delay in range(5, 0, -1):
 time.sleep(3)
 print("Score is currently at 0")
 score = 0
-
+#dictionary
 Music_list_dict1 = {
 'Question' : 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'}
 {
 'Question' : 'Who is the lead singer of Led Zepplin?', 'Answer': 'Robert Plant'}
+{
+'Question' : 'What band has been going for the longest time live?', 'Answer': 'The Rolling Stones'}
+{
+'Question' : 'What is the most hated music genre?', 'Answer': 'Jazz'}
 
 Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
   
@@ -38,6 +42,7 @@ if Enter_to_play == 'ENTER':
   while score <30:
     random_music_questions = random.choice(Music_list_dict1)
     print (random_music_questions(Music_list_dict1))
+    time.sleep(1)
   answer = input(">>")
   if answer.lower() == random_music_questions['Answer'].lower():
     print ("Well done! You got this right!")
