@@ -71,8 +71,10 @@ while True:
       print("Goodbye! Thanks for playing!")
   break
 else:
-  print("Please either choose yes or no!")
+  print("Please either choose yes or no!!!")\
+
 else:
+
 print("Sadly you didn't pass the quiz!")
 print("Would like to have another go?")
 again = input("yes or no>>")
