@@ -9,7 +9,6 @@
 #imports
 import time
 import random
-
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
 print("🎵🎶🎹🎸")
@@ -35,7 +34,8 @@ Music_list_dict1 = {
 
 'Question 4 ' : {'Question' :'What is the most hated music genre?', 'Answer': 'Jazz'},
   
-'Question 5 ' : {'Question' :'What is the best selling album of all time?', 'Answer': 'Thriller'}
+'Question 5 ' : {'Question' :'What is the best selling album of all time?', 'Answer': 'Thriller'},
+  'Question 6 ' : {'Question' :'What is The Beatles first album?', 'Answer': 'Please Please Me'},
 }
 
 Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
@@ -44,6 +44,8 @@ if Enter_to_play == 'ENTER':
   print("All right!")
   name = input("What is your name?")
   print("Welcome", name )
+else:
+  print("I don't understand")
 #randomly generated questions
 while score <30:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
@@ -52,10 +54,10 @@ while score <30:
     if answer.lower() == random_music_questions["Answer"].lower():
         print("Well done! You got this right!")
         score +=5
-        print("You now have 5 more points!")
+        print("\033[1;32m That is correct! Well done! \n")
         print("Your score is now at", score)
     else:
-        print("That is incorrect!")
+       print("\031[1;32;40m That is incorrect! \n")
     #end of game
 while True:
   if score == 30:
