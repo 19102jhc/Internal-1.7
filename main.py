@@ -13,6 +13,7 @@ import random
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
 print("🎵🎶🎹🎸")
+print("You need to get 30 points to pass the quiz!")
 time.sleep(1)
 print("Loading...")
 print('Starting in: ')
