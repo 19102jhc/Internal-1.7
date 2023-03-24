@@ -1,5 +1,5 @@
 '''
-  Name: 
+  Name: Oliver van Uden-Smith
   James Hargest College
   Programming Internal for 1.7 ~ 4 credits
   Due: 6 April 2023
@@ -37,15 +37,16 @@ Music_list_dict1 = {
 'Question 5 ' : {'Question' :'What is the best selling album of all time?', 'Answer': 'Thriller'},
   'Question 6 ' : {'Question' :'What is The Beatles first album?', 'Answer': 'Please Please Me'},
 }
-
-Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
+while True:
+  Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
+  break
   
 if Enter_to_play == 'ENTER':
   print("All right!")
   name = input("What is your name?>>   ")
   print("Welcome", name )
 else:
-  print("I don't understand")
+  print("Please type what I ask :(")
 #randomly generated questions
 while score <30:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
@@ -74,19 +75,15 @@ while True:
     if again.lower() == 'yes':
       score == 0
       continue
-    print("Welcome back!")
-    break
-
+    print("Alright!")
+   
   elif again.lower() == 'no':
       print("Goodbye! Thanks for playing!")
   break
 else:
   print("That is an invalid response!")
-continue
 
-else:
 
-print("Invalid input! Please try again!")
 
 
 
