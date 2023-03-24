@@ -64,36 +64,30 @@ while True:
     print("You have passed the quiz! Well done!")
     again = input("Do you want to repeat the quiz?")
     if again.upper() == 'yes':
+      score == 0
       continue
     print("Welcome back!")
+    break
+    if score < 30:
+      print("Sadly you didn't pass the quiz!")
+    again = input("Do you want to repeat the quiz?")
+    if again.lower() == 'yes':
+      score == 0
+      continue
+    print("Welcome back!")
+    break
 
-  elif again == 'no':
+  elif again.lower() == 'no':
       print("Goodbye! Thanks for playing!")
   break
 else:
-  print("Please either choose yes or no!!!")\
+  print("That is an invalid response!")
+continue
 
 else:
 
-print("Sadly you didn't pass the quiz!")
-print("Would like to have another go?")
-again = input("yes or no>>")
-if again.upper() == 'yes':
-      continue
-    print("Welcome back!")
-  
-  elif again == 'no':
-      print("Goodbye! Thanks for playing!")
-break
-else:
-print("Invalid input! Please type yes or no!")
+print("Invalid input! Please try again!")
 
-
-    #new question added
-  #currently fixing 
-  print("Invalid input, please try again.")
-score = 0
-print("You are wrong! You got no points from this!")
 
 
 
