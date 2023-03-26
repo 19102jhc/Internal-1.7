@@ -12,7 +12,7 @@ import random
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
 print("🎵🎶🎹🎸")
-print("You need to get 30 points to pass the quiz!")
+print("You need to get 30 points to pass the quiz! You have 4 chances!")
 time.sleep(1)
 print("Loading...")
 print('Starting in: ')
@@ -24,6 +24,7 @@ for delay in range(5, 0, -1):
 time.sleep(3)
 print("Score is currently at 0")
 score = 0
+chances = 4
 #dictionary
 Music_list_dict1 = {
 'Question 1 ' : {'Question' : 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'},
@@ -49,6 +50,7 @@ else:
   print("Please type what I ask :(")
 #randomly generated questions
 while score <30:
+  while chances >0:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
     print(random_music_questions["Question"])
     answer = input(">>")
@@ -59,6 +61,8 @@ while score <30:
         print("Your score is now at", score)
     else:
        print("\031[1;32;40m That is incorrect! \n")
+      chances -=1
+    print("You now have these many chances left:", chances)
     #end of game
 while True:
   if score == 30:
@@ -66,14 +70,17 @@ while True:
     again = input("Do you want to repeat the quiz?")
     if again.upper() == 'yes':
       score == 0
+      chances == 4
       continue
     print("Welcome back!")
     break
     if score < 30:
+      if chances = 0:
       print("Sadly you didn't pass the quiz!")
     again = input("Do you want to repeat the quiz?")
     if again.lower() == 'yes':
       score == 0
+      chances == 4
       continue
     print("Alright!")
    
