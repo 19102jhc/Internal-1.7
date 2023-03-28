@@ -49,9 +49,7 @@ if Enter_to_play == 'ENTER':
 else:
   print("Please type what I ask :(")
 #randomly generated questions
-while score <30:
-
-  while chances >0:
+while score <30 and chances >0:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
     print(random_music_questions["Question"])
     answer = input(">>")
@@ -59,7 +57,7 @@ while score <30:
         print("Well done! You got this right!")
         score +=5
         print("\033[1;32m That is correct! Well done! \n")
-        print("\033[0;37;40m.........................................................\n")
+        print("\033[0;37;40m ..........................................................\n")
         print("Your score is now at", score,"!")
     else:
       print("\033[1;31;40m That is incorrect!  \n")
@@ -78,16 +76,16 @@ while True:
       continue
     print("Welcome back!")
     break
-    if chances ==0:
-      print("Sadly you didn't pass the quiz!")
+    while True:
+      if chances ==0:
+        print("Sadly you didn't pass the quiz!")
     again = input("Do you want to repeat the quiz?")
     if again.lower() == 'yes':
       score == 0
       chances == 4
       continue
     print("Alright!")
-   
-  elif again.lower() == 'no':
+  else:
       print("Goodbye! Thanks for playing!")
   break
 else:
