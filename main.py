@@ -9,6 +9,7 @@
 #imports
 import time
 import random
+
 print("Welcome to the Music Quiz!")
 print("By Oliver!")
 print("🎵🎶🎹🎸")
@@ -23,8 +24,8 @@ for delay in range(5, 0, -1):
   
 time.sleep(3)
 print("Score is currently at 0")
-while True:
-  score = 0
+
+score = 0
 chances = 4
 #dictionary
 Music_list_dict1 = {
@@ -39,16 +40,17 @@ Music_list_dict1 = {
 'Question 5 ' : {'Question' :'What is the best selling album of all time?', 'Answer': 'Thriller'},
   'Question 6 ' : {'Question' :'What is The Beatles first album?', 'Answer': 'Please Please Me'},
 }
+
 while True:
   Enter_to_play = input("Please type 'ENTER' to start the quiz>>")
-  break
-  
-if Enter_to_play == 'ENTER':
-  print("All right!")
-  name = input("What is your name?>>   ")
-  print("Welcome", name )
-else:
-  print("Please type what I ask :(")
+  if Enter_to_play == 'ENTER':
+    print("All right!")
+    name = input("What is your name?>>   ")
+    print("Welcome", name )
+    break
+  else:
+    print("Please type what I ask :(")
+
 #randomly generated questions
 while score <30 and chances >0:
     random_music_questions = random.choice(list(Music_list_dict1.values()))
@@ -69,28 +71,25 @@ while score <30 and chances >0:
     #end of game
     if score == 30:
       print("You have passed the quiz! Well done!")
-    again = input("Do you want to repeat the quiz?")
-    if again.upper() == 'yes':
-      score == 0
-      chances == 4
-      continue
-    print("Welcome back!")
-    break
-    while True:
-      if chances ==0:
-        print("Sadly you didn't pass the quiz!")
-    again = input("Do you want to repeat the quiz?")
+      break
+    again = input("Do you want to repeat the quiz? (yes or no) ")
     if again.lower() == 'yes':
-      score == 0
-      chances == 4
-      continue
-    print("Alright!")
-else:
-      print("Goodbye! Thanks for playing!")
-break
-else:
-print("That is an invalid response!")
-
+        score = 0
+        chances = 4
+        continue
+    else:
+        print("Goodbye! Thanks for playing!")
+        break
+#repeat or not?
+    if chances == 0:
+      again = input("Do you want to repeat the quiz? (yes or no) ")
+      if again.lower() == 'yes':
+        score = 0
+        chances = 4
+        continue
+      else:
+        print("Goodbye! Thanks for playing!")
+        break
 
 
 
