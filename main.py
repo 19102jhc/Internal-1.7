@@ -59,13 +59,14 @@ while score <30:
         print("Well done! You got this right!")
         score +=5
         print("\033[1;32m That is correct! Well done! \n")
-        print("\033[0;37;40m .........................................................\n")
-        print("Your score is now at", score)
+        print("\033[0;37;40m.........................................................\n")
+        print("Your score is now at", score,"!")
     else:
-       print("\031[1;32;40m That is incorrect! \n")
-       chances -=1
-    print("You have",chances,"Chances left! ")
-    print("You have gained", score, "points")
+      print("\033[1;31;40m That is incorrect!  \n")
+      print("\033[0m.........................................................\n")
+      chances -=1
+    print("You have",chances,"Chances left ! ")
+   
     #end of game
 while True:
   if score == 30:
@@ -78,7 +79,6 @@ while True:
     print("Welcome back!")
     break
     if chances ==0:
- 
       print("Sadly you didn't pass the quiz!")
     again = input("Do you want to repeat the quiz?")
     if again.lower() == 'yes':
