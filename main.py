@@ -23,7 +23,8 @@ for delay in range(5, 0, -1):
   
 time.sleep(3)
 print("Score is currently at 0")
-score = 0
+while True:
+  score = 0
 chances = 4
 #dictionary
 Music_list_dict1 = {
@@ -66,9 +67,8 @@ while score <30 and chances >0:
     print("You have",chances,"Chances left ! ")
    
     #end of game
-while True:
-  if score == 30:
-    print("You have passed the quiz! Well done!")
+    if score == 30:
+      print("You have passed the quiz! Well done!")
     again = input("Do you want to repeat the quiz?")
     if again.upper() == 'yes':
       score == 0
@@ -85,11 +85,11 @@ while True:
       chances == 4
       continue
     print("Alright!")
-  else:
-      print("Goodbye! Thanks for playing!")
-  break
 else:
-  print("That is an invalid response!")
+      print("Goodbye! Thanks for playing!")
+break
+else:
+print("That is an invalid response!")
 
 
 
