@@ -37,6 +37,8 @@ music_list_dict = {
     'Question 4': {'Question': 'What is the most hated music genre?', 'Answer': 'Jazz'},
     'Question 5': {'Question': 'What is the best selling album of all time?', 'Answer': 'Thriller'},
     'Question 6': {'Question': 'What is The Beatles first album?', 'Answer': 'Please Please Me'}
+  {
+  'Question 7': {'Question': 'What symbol was on Ed Sheerans 2011 album?', 'Answer': '+'},
 }
 
 # loop to start the quiz so you cannot just randomly put anything
