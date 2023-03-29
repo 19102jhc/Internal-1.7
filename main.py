@@ -9,8 +9,8 @@
 #imports
 import time
 import random
-
-print("Welcome to the Music Quiz!")
+def welcome():
+  print("Welcome to the Music Quiz!")
 print("By Oliver!")
 print("🎵🎶🎹🎸")
 print("You need to get 30 points to pass the quiz! You have 4 chances!")
@@ -43,7 +43,8 @@ music_list_dict = {
 
 # loop to start the quiz so you cannot just randomly put anything
 while True:
-    enter_to_play = input("Please type 'ENTER' to start the quiz>>")
+
+     enter_to_play = input("Please type 'ENTER' to start the quiz>>")
     if enter_to_play == 'ENTER':
         print("All right!")
         name = input("What is your name?>>   ")
