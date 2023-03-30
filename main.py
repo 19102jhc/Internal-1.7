@@ -9,6 +9,7 @@
 #imports
 import time
 import random
+#function 1
 def welcome_message():
     print("Welcome to the Music Quiz!")
     print("By Oliver!")
@@ -17,20 +18,22 @@ def welcome_message():
     time.sleep(1)
     print("Loading...")
     print('Starting in:')
-    # countdown
+    # countdown from 5 to start the quiz
     for delay in range(5, 0, -1):
         time.sleep(1)
         print(delay)
     time.sleep(3)
     print("Score is currently at 0")
-
+#function 2
 def play_again():
     again = input("Do you want to repeat the quiz?")
     if again.lower() == 'yes':
         return True
+      #loop back to the beginning
     else:
         print("Goodbye! Thanks for playing!")
         return False
+      #break
 
 # tells the welcome function to show the welcome message
 welcome_message()
@@ -62,6 +65,7 @@ while True:
 
 
 while True:
+  #if user has 30 points, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, otherwise it breaks.
     if score == 30:
         print("You have passed the quiz! Well done!")
         if play_again():
@@ -69,6 +73,7 @@ while True:
             chances = 4
         else:
             break
+          #if user has 0 chances left, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, otherwise it breaks.
     elif chances == 0:
         print("You have lost all of your chances!")
         if play_again():
@@ -82,7 +87,7 @@ while True:
         random_music_questions = random.choice(list(music_list_dict.values()))
         print(random_music_questions["Question"])
         answer = input(">>")
-      #if answer matches the answer in the dict
+      #if answer matches the answer in the dict, they gain 5 points
         if answer.lower() == random_music_questions["Answer"].lower():
             print("Well done! You got this right!")
             score += 5
@@ -90,6 +95,7 @@ while True:
             print("\033[0;37;40m ..........................................................\n")
             print("Your score is now at", score, "!")
         else:
+          #else, they loose one chance, and the quiz picks another random question from the dict
             print("\033[1;31;40m That is incorrect!  \n")
             print("\033[0m.........................................................\n")
             chances -= 1
