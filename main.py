@@ -38,7 +38,7 @@ welcome_message()
 score = 0
 chances = 4
 
-# dictionary
+# dictionary of multiple questions on music
 music_list_dict = {
     'Question 1': {'Question': 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'},
     'Question 2': {'Question': 'Who is the lead singer of Led Zepplin?', 'Answer': 'Robert Plant'},
@@ -60,7 +60,7 @@ while True:
     else:
         print("Please type what I ask :(")
 
-# randomly generated questions from the dict
+
 while True:
     if score == 30:
         print("You have passed the quiz! Well done!")
@@ -76,10 +76,13 @@ while True:
             chances = 4
         else:
             break
+
+          # randomly generated questions from the dict
     else:
         random_music_questions = random.choice(list(music_list_dict.values()))
         print(random_music_questions["Question"])
         answer = input(">>")
+      #if answer matches the answer in the dict
         if answer.lower() == random_music_questions["Answer"].lower():
             print("Well done! You got this right!")
             score += 5
