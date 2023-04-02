@@ -49,9 +49,24 @@ music_list_dict = {
     'Question 4': {'Question': 'What is the most hated music genre?', 'Answer': 'Jazz'},
     'Question 5': {'Question': 'What is the best selling album of all time?', 'Answer': 'Thriller'},
     'Question 6': {'Question': 'What is The Beatles first album?', 'Answer': 'Please Please Me'},
-    'Question 7': {'Question': 'What symbol was on Ed Sheerans 2011 album?', 'Answer': '+'}
+    'Question 7': {'Question': 'What symbol was on Ed Sheerans 2011 album?', 'Answer': '+'},
+    'Question 8': {'Question': 'What was the first rap song to reach number 1 on the US Billboard Hot 100 chart?', 'Answer': 'Rapper\'s Delight'},
+    'Question 9': {'Question': 'Who won the album of the Year at the 2022 Grammy Awards?', 'Answer': 'Taylor Swift'},
+    'Question 10': {'Question': 'Which artist holds the record for the most Grammy Awards won?', 'Answer': 'Georg Solti'},
+    'Question 11': {'Question': 'What was the name of Nirvana\'s lead singer?', 'Answer': 'Kurt Cobain'},
+    'Question 12': {'Question': 'Who wrote the song "Bohemian Rhapsody"?', 'Answer': 'Freddie Mercury'},
+    'Question 13': {'Question': 'What was the first music video ever aired on MTV?', 'Answer': 'Video Killed the Radio Star'},
+    'Question 14': {'Question': 'Who is the highest selling female artist of all time?', 'Answer': 'Madonna'},
+    'Question 15': {'Question': 'What was the name of Beyonce\'s first solo album?', 'Answer': 'Dangerously in Love'},
+    'Question 16': {'Question': 'What was the first music album to be released on CD?', 'Answer': '52nd Street'},
+    'Question 17': {'Question': 'What is the most streamed song of all time on Spotify?', 'Answer': 'Shape of You'},
+    'Question 18': {'Question': 'Who is known as the "King of Pop"?', 'Answer': 'Michael Jackson'},
+    'Question 19': {'Question': 'What is the name of Taylor Swift\'s debut album?', 'Answer': 'Taylor Swift'},
+    'Question 20': {'Question': 'Who is the lead singer of the Red Hot Chili Peppers?', 'Answer': 'Anthony Kiedis'},
+    'Question 21': {'Question': 'What is the name of the first album released by Eminem?', 'Answer': 'Infinite'},
+    'Question 22': {'Question': 'Who composed the music for the film "The Lion King"?', 'Answer': 'Hans Zimmer'},
+    'Question 23': {'Question': 'What is the name of the lead singer of Coldplay?', 'Answer': 'Chris Martin'}
 }
-
 # loop to start the quiz so you cannot just randomly put anything
 while True:
     enter_to_play = input("Please type 'ENTER' to start the quiz>>")
