@@ -25,6 +25,7 @@ def welcome_message():
     time.sleep(3)
     print("Score is currently at 0")
 #function 2
+  
 def play_again():
     again = input("Do you want to repeat the quiz?")
     if again.lower() == 'yes':
@@ -32,9 +33,10 @@ def play_again():
       #loop back to the beginning
     else:
         print("Goodbye! Thanks for playing!")
+        time.sleep(9999)
         return False
-      #break
-
+    
+      
 # tells the welcome function to show the welcome message
 welcome_message()
 
@@ -70,7 +72,7 @@ music_list_dict = {
 # loop to start the quiz so you cannot just randomly put anything
 while True:
     enter_to_play = input("Please type 'ENTER' to start the quiz>>")
-    if enter_to_play == 'ENTER':
+    if enter_to_play.upper() == 'ENTER':
         print("All right!")
         name = input("What is your name?>>   ")
         print("Welcome", name)
@@ -95,7 +97,7 @@ while True:
             score = 0
             chances = 4
         else:
-            break
+          break
 
           # randomly generated questions from the dict
     else:
@@ -115,25 +117,3 @@ while True:
             print("\033[0m.........................................................\n")
             chances -= 1
         print("You now have", chances, "chances left!")
-
-    
-
-  
-
-  
-  
-
-
-
-  
-  
-
-  
-  
-
-  
-  
-  
-
-
-
