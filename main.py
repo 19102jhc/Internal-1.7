@@ -26,15 +26,15 @@ def welcome_message():
     print("Score is currently at 0")
 #function 2
   
-def play_again()
+def play_again():
     again = input("Do you want to repeat the quiz? (yes or no)")
     if again.lower() =='yes':
-        return True
+          return True
       #loop back to the beginning
     else:
           print("Goodbye! Thanks for playing!")
-        time.sleep(9999)
-        return False
+          time.sleep(9999)
+          return False
     
 # tells the welcome function to show the welcome message
 welcome_message()
@@ -73,7 +73,7 @@ while True:
     enter_to_play = input("Please type 'ENTER' to start the quiz>>")
     if enter_to_play.upper() == 'ENTER':
         print("All right!")
-        name = input("What is your name?>>   ")
+        name = input ("What is your name?")
         print("Welcome", name)
 
         break
