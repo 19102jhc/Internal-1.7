@@ -36,7 +36,6 @@ def play_again():
         time.sleep(9999)
         return False
     
-      
 # tells the welcome function to show the welcome message
 welcome_message()
 
@@ -104,7 +103,7 @@ while True:
         random_music_questions = random.choice(list(music_list_dict.values()))
         print(random_music_questions["Question"])
         answer = input(">>")
-      #if answer matches the answer in the dict, they gain 5 points
+      #if answer matches the answer in the dict, they gain 5 points, they can also type the questions in lower or uppercase and they will still get it right. This is because of the .lower, .upper points.
         if answer.lower() == random_music_questions["Answer"].lower():
             print("Well done! You got this right!")
             score += 5
