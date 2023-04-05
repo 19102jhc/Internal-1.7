@@ -27,7 +27,7 @@ def the_welcome_message():
 #function 2
   
 def play_again():
-    again = input("Do you want to repeat the quiz? (yes or no)")
+    again = input("Do you want to repeat the quiz? yes or no")
     if again.lower() =='yes':
           return True
       #loop back to the beginning
