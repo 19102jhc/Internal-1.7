@@ -85,7 +85,7 @@ while True:
 
 
 while True:
-  #if user has 30 points, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, you get 0 points and 4 chances, otherwise it breaks.
+  #if user has 30 points, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, you get 0 points and 4 chances, otherwise it breaks. This is with the variables score and chances.
     if score == 30:
         print("You have passed the quiz! Well done!")
         if play_again():
@@ -109,10 +109,10 @@ while True:
         random_music_questions = random.choice(list(music_list_dict.values()))
         print(random_music_questions["Question"])
         answer = input(">>")
-      #if answer matches the answer in the dict, they gain 5 points, they can also type the questions in lower or uppercase and they will still get it right. This is because of the lower, upper points. There is colour when you get the question right or wrong. Green for right, red for wrong.
+      #if answer matches the answer in the dict, they gain 5 points, they can also type the questions in lower or uppercase and they will still get it right. This is because of the lower, upper points. There is colour when you get the question right or wrong. Green for right, red for wrong. The random questions get the question from the list and ask you this question.
 
       
-        if answer.lower() == random_music_questions["Answer"].lower():
+        if answer.lower() == random_music_questions["Answer"].lower(): #Gets the answer and sees if you get the question right or wrong.
             print("Well done! You got this right!")
             score += 5
             print("\033[1;32m That is correct! Well done! \n")
