@@ -10,7 +10,7 @@
 import time
 import random
 #function 1
-def welcome_message():
+def the_welcome_message():
     print("Welcome to the Music Quiz!")
     print("By Oliver!")
     print("🎵🎶🎹🎸")
@@ -36,8 +36,8 @@ def play_again():
           time.sleep(9999)
           return False
     
-# tells the welcome function to show the welcome message
-welcome_message()
+#Grabs the welcome message to loop back to when the welcome message acually happens
+the_welcome_message()
 
 score = 0
 chances = 4
