@@ -8,7 +8,7 @@
 '''
 import time
 import random
-
+#Function
 def the_welcome_message():
     print("Welcome to the Music Quiz!")
     print("By Oliver!")
@@ -26,25 +26,25 @@ def the_welcome_message():
     time.sleep(3)
     print("Score is currently at 0")
 
-
+#Function
 def play_again():
     again = input("Do you want to repeat the quiz? yes or no")
     
     if again.lower() == 'yes':
-        return True
+        return True #Loops the quiz back to when it starts.
     else:
         print("Goodbye! Thanks for playing!")
         time.sleep(9999)
-        return False
+        return False #breaks
 
     
-#Grabs the welcome message to loop back to when the welcome message acually happens
+#Gets the welcome message to loop back to where it is stated.
 the_welcome_message()
 
 score = 0
 chances = 4
 
-# dictionary of multiple questions on music
+# dictionary of multiple questions on music.
 music_list_dict = {
     'Question 1': {'Question': 'Who made the album The Dark Side of The Moon?', 'Answer': 'Pink Floyd'},
     'Question 2': {'Question': 'Who is the lead singer of Led Zepplin?', 'Answer': 'Robert Plant'},
@@ -71,7 +71,7 @@ music_list_dict = {
     'Question 23': {'Question': 'What is the name of the lead singer of Coldplay?', 'Answer': 'Chris Martin'}
 }
 
-# loop to start the quiz so you cannot just randomly put anything
+# loop to start the quiz so you cannot just randomly put anything. Upper meaning you can put uppercases. If you put anything but this, the code loop until you type enter.
 while True:
     enter_to_play = input("Please type 'ENTER' to start the quiz>>")
     if enter_to_play.upper() == 'ENTER':
@@ -85,7 +85,7 @@ while True:
 
 
 while True:
-  #if user has 30 points, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, otherwise it breaks.
+  #if user has 30 points, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, you get 0 points and 4 chances, otherwise it breaks.
     if score == 30:
         print("You have passed the quiz! Well done!")
         if play_again():
@@ -95,7 +95,7 @@ while True:
             break
 
   
-          #if user has 0 chances left, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, otherwise it breaks.
+          #if user has 0 chances left, code asks if you want to repeat or not. If so, the code loops back to when the questions are asked, otherwise it breaks. 
     elif chances == 0:
         print("You have lost all of your chances!")
         if play_again():
@@ -109,7 +109,7 @@ while True:
         random_music_questions = random.choice(list(music_list_dict.values()))
         print(random_music_questions["Question"])
         answer = input(">>")
-      #if answer matches the answer in the dict, they gain 5 points, they can also type the questions in lower or uppercase and they will still get it right. This is because of the .lower, .upper points.
+      #if answer matches the answer in the dict, they gain 5 points, they can also type the questions in lower or uppercase and they will still get it right. This is because of the lower, upper points. There is colour when you get the question right or wrong. Green for right, red for wrong.
 
       
         if answer.lower() == random_music_questions["Answer"].lower():
@@ -121,7 +121,7 @@ while True:
 
       
         else:
-          #else, they loose one chance, and the quiz picks another random question from the dict
+          #else, they loose one chance, and the quiz picks another random question from the dict.
             print("\033[1;31;40m That is incorrect!  \n")
             print("\033[0m.........................................................\n")
             chances -= 1
